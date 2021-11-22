@@ -1,6 +1,42 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+body {
+  background-color: #B6B7BB;
+  height: 100%;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 50px;
+  color: black;
+  
+}
+
+h3 {
+  word-spacing: 50px;
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  margin-top: 0.1cm;
+  font-size: 20px;
+  color: white;
+}
+
+.heading{
+  word-spacing: 10px;
+  font-size: 20px;
+  color: white;
+
+}
+
+.about{
+  font-size: 50px;
+  color: white;
+}
+
+.albums{
+  font-size: 50px;
+  color: White;
+}
+
