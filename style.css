@@ -9,7 +9,8 @@ body {
 
 /* Header (scroll) */
 .header {
-
+  display: block;
+  position: relative;
   padding: 5px 7px;
   background: white;
   color: black;
@@ -17,6 +18,7 @@ body {
   opacity: 0.7;
 }
 
+/* bts logo */
 .imgHeader {
   opacity: 1;
   float: left;
@@ -24,44 +26,41 @@ body {
 
 
 .sticky {
+  display:block;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+
 .sticky + .imgBg {
-  padding-top: 300px;
+  padding-top: 50px;
 }
 
 /* Background Image */
 .imgBg {
-
-  background-position:center;
-  background-repeat: no-repeat;
-
-  margin-top: 1cm;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  height:1080px;
-  width: 1920;;
-
-  opacity: 0.6;
-
-  }
-
-h1 {
+  padding-top: 50px;
+  position: relative;
   text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  width: 100%;
-  opacity: 1;
-  text-shadow: 1px 1px 2px white;
+  color: white;
+  opacity: 0.7;
+  background-attachment: fixed;
+}
 
+
+
+  /* Words in Image Background */
+.center-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-shadow: 1px 1px 2px white;
   font-size: 50px;
   color: black;
+  transform: translate(-50%, -50%);
   }
 
+/* words (buttons) */
 h3 {
     text-align: right;
     opacity: 1;
@@ -71,14 +70,7 @@ h3 {
     color: black;
     }
 
-/* Words in Image Background */
-.heading{
-  word-spacing: 10px;
-  font-size: 20px;
-  color: white;
-
 /* Buttons */
-}
 .btn1{
   background-color: none;
   color: black;
@@ -90,13 +82,12 @@ h3 {
   .btn1:hover {
   background-color: #e7e7e7;;
   color: black;
-  opacity: 0.2;
   
   }
 
 
 
-  .btn2{
+  .members_btn{
   background-color: none;
   color: black;
   padding: 15px 25px;
@@ -104,15 +95,14 @@ h3 {
   transition-duration: 0.4s;
   border-radius: 36px;
   }
-  .btn2:hover {
+  .members_btn:hover {
   background-color: #e7e7e7;;
   color: black;
-  opacity: 0.2;
   
   }
 
 
-  .btn3{
+  .albums_btn{
   background-color: none;
   color: black;
   padding: 15px 25px;
@@ -120,14 +110,13 @@ h3 {
   transition-duration: 0.4s;
   border-radius: 36px;
   }
-  .btn3:hover {
+  .albums_btn:hover {
   background-color: #e7e7e7;;
   color: black;
-  opacity: 0.2;
   
   }
 
-  .btn4{
+  .events_btn{
   background-color: none;
   color: black;
   padding: 15px 25px;
@@ -135,14 +124,13 @@ h3 {
   transition-duration: 0.4s;
   border-radius: 36px;
   }
-  .btn4:hover {
+  .events_btn:hover {
   background-color: #e7e7e7;;
   color: black;
-  opacity: 0.2;
   
   }
 
-  .btn5{
+  .awards_btn{
   background-color: none;
   color: black;
   padding: 15px 25px;
@@ -150,10 +138,9 @@ h3 {
   transition-duration: 0.4s;
   border-radius: 36px;
   }
-  .btn5:hover {
+  .awards_btn:hover {
   background-color: #e7e7e7;;
   color: black;
-  opacity: 0.2;
   
   }
 
