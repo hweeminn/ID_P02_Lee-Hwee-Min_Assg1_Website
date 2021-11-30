@@ -1,56 +1,81 @@
 /* Index Page ____________________________________________________________________________________*/ 
 
 /* Background col */
-body {
-  background-color: #B6B7BB;
-  height: 100%;
-  margin: 0;
+body{
+  font-family:'Nanum Myeongjo', serif;
+
+  background-color: black;
+  min-height: 200vh;
 }
+/* #B6B7BB */
 
-/* Header (scroll) */
-.header {
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding: 5px 7px;
-  background: white;
-  color: black;
-
-  opacity: 0.7;
-}
-
-/* bts logo */
-.imgHeader {
-  opacity: 1;
-  float: left;
-}
-
-
-.sticky {
-  display:block;
+/* HEADER ____________________________________________*/
+header{
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 30px 100px;
+  z-index: 100000;
 }
 
-
-.sticky + .imgBg {
-  padding-top: 50px;
+header.sticky{
+  padding: 5px 100px; 
+  background: white;
 }
 
-/* Background Image */
-.imgBg {
-  padding-top: 50px;
+header .logo{
   position: relative;
-  text-align: center;
+  font-weight: 1100;
   color: white;
-  opacity: 0.7;
-  background-attachment: fixed;
+  text-decoration: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6;
+
 }
 
 
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Words in Image Background */
+header ul li{
+  position: relative;
+  list-style: none;
+
+}
+
+header ul li a{
+  position: relative;
+  margin: 0 20px;
+  text-decoration: none;
+  color:white
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.squarespace-cdn.com/content/v1/5964f30d86e6c02fd9c6626f/1500451236904-WF1MDPIMMJUOSOZK5JVW/DSC02461.jpg?format=2500w);
+  background-size: cover;
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+  color:black;
+
+}
+
+  /* Words in Image Background of index page*/
 .center-text{
   position: absolute;
   top: 50%;
@@ -62,77 +87,6 @@ body {
 
   }
 
-/* words (buttons) */
-h3 {
-    text-align: right;
-    opacity: 1;
-    font: bold;
-    word-spacing: 15px;
-    font-size: 15px;
-    color: black;
-    }
-
-/* Buttons */
-
-
-
-
-  .members_btn{
-  background-color: none;
-  color: black;
-  padding: 15px 25px;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  border-radius: 36px;
-  }
-  .members_btn:hover {
-  background-color: #e7e7e7;;
-  color: black;
-  
-  }
-
-
-  .albums_btn{
-  background-color: none;
-  color: black;
-  padding: 15px 25px;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  border-radius: 36px;
-  }
-  .albums_btn:hover {
-  background-color: #e7e7e7;;
-  color: black;
-  
-  }
-
-  .events_btn{
-  background-color: none;
-  color: black;
-  padding: 15px 25px;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  border-radius: 36px;
-  }
-  .events_btn:hover {
-  background-color: #e7e7e7;;
-  color: black;
-  
-  }
-
-  .awards_btn{
-  background-color: none;
-  color: black;
-  padding: 15px 25px;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  border-radius: 36px;
-  }
-  .awards_btn:hover {
-  background-color: #e7e7e7;;
-  color: black;
-  
-  }
 
 /* About Page _________________________________________________________________________________________*/
 
@@ -148,8 +102,59 @@ p {
 }
 
 /* Album Page _________________________________________________________________________________________*/
-.albums{
+
+.album{
+  position: absolute;
+  top: 46%;
+  left: 44%;
   font-size: 50px;
   color: White;
+}
+
+/* Albums images __________________________________ */
+/* 2021 */
+.container {
+  position: relative;
+  width: 20%;
+  padding: 80px;
+  float: left; 
+}
+
+.albumimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/* HOVER _______________*/
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+.text {
+  background-color:black;
+  color:white;
+  font-size: 25px;
+  padding: 120px 120px;
+  opacity: 0.7;
 }
 
