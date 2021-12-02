@@ -39,11 +39,7 @@ var x = setInterval(function() {
 /* COMMENT BOX ________________________________________________________________________*/
 
 function myFunction() {
-  var txt;
-  if (confirm("You Have Just Send A Comment!")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
+
+  alert("You Have Just Send A Comment!");
+  return false;
   }
-  document.getElementById("demo").innerHTML = txt;
-}
