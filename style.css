@@ -1,6 +1,6 @@
 body{
   font-family:'Nanum Myeongjo', serif;
-  min-height: 200vh;
+  height: 100%;
 
 }
 
@@ -559,11 +559,12 @@ h1 span:nth-child(6){ animation-delay:.25s; }
 }
 
 /* FOOTER __________________*/
-footer {
+#footer {
+  position:relative;
   text-align: center;
   padding: 20px 100px;
   font-size: 10px;
-  bottom:0%;
+  bottom:0;
   background-color:dimgray;
   color: white;
 }
