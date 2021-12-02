@@ -57,7 +57,7 @@ body{
 }
 
 .indexbanner{
-  background-image: url(https://variety.com/wp-content/uploads/2020/09/bts-variety-cover-shoot-full-band-1-16x9-1.jpg);
+  background-image: url(images/home_coverbts.jpg);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -343,7 +343,7 @@ header ul li a{
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(https://images.squarespace-cdn.com/content/v1/5964f30d86e6c02fd9c6626f/1500451236904-WF1MDPIMMJUOSOZK5JVW/DSC02461.jpg?format=2500w);
+  background: url(images/album_coverstudio.jpg);
   background-size: cover;
 }
 header.sticky .logo,
@@ -419,7 +419,7 @@ header ul li a:hover{
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(https://images.news18.com/ibnlive/uploads/2021/09/bts-4.jpg);
+  background: url(images/members_cover);
   background-size: cover;
   opacity: 0.8;
 }
