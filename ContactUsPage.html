@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ContactUs</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
     <style>
 
         body {
-        background-attachment: fixed;
-        background-color: #c0a013;
+        background-color: #dbe3e5;
+        height: 200vh;
         }
 
     </style>
@@ -18,24 +18,24 @@
 </head>
 
 <body>
-    <header>
-        <a href= "#" class="logo">
-            <img src="https://1000logos.net/wp-content/uploads/2018/03/BTS-Logo.png" alt="myHeader" 
+    <div class = indexheader>
+        <a href= "#" class="indexlogo">
+            <img src="https://1000logos.net/wp-content/uploads/2018/03/BTS_Logo.png" alt="myHeader" 
             width="100" 
             height="50"/>
         </a>  
             
         <ul>
             <li>
-                <a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID_S10223008_Lee-Hwee-Min_Assg1_Website-1/index.html">HOME</a> 
+                <a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID_S10223008_Lee-Hwee-Min_Assg1_Website-1/index.html" >HOME</a> 
+            </li>
+
+            <li>
+                <a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID_S10223008_Lee-Hwee-Min_Assg1_Website-1/Member%20Page.html">MEMBERS</a> 
             </li>
 
             <li>
                 <a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID_S10223008_Lee-Hwee-Min_Assg1_Website-1/Album%20Page.html" >ALBUMS</a> 
-            </li>
-
-            <li>
-                <a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID_S10223008_Lee-Hwee-Min_Assg1_Website-1/Member%20Page.html" >MEMBERS</a> 
             </li>
 
             <li>
@@ -44,7 +44,60 @@
 
         </ul>
 
-    </header>
+    </div>>
 
-    <section class="banner4"></section>
+    <div class = "contact"><b>FOLLOW US ON</b></div>
+
+    <!-- icons -->  
+        <div class="twitter">
+            <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="https://seeklogo.com/images/T/twitter-icon-circle-black-logo-35827D553B-seeklogo.com.png" alt="twitter"
+            width="76" height="76"/></a>
+        </div>
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/bts.bighitofficial/?hl=en">
+            <img src="https://i.pinimg.com/originals/69/74/b5/6974b5f9158cbe064b8e465e68e52eed.png" alt="instagram"
+            width="102" height="102"/></a>
+        </div>
+
+        <div class="youtube">
+            <a href="https://www.youtube.com/user/ibighit">
+            <img src="https://i.dlpng.com/static/png/6599833_preview.png" alt="youtube"
+            width="80" height="80"/></a>
+        </div>
+
+        <div class="tiktok">
+            <a href="https://www.tiktok.com/@bts_official_bighit?lang=en">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/tiktok-round.png" alt="youtube"
+            width="78" height="78"/></a>
+        </div>
+    </div>
+    
+
+    <!-- EMAIL BOX-->
+
+    <div class= "contactus">
+        <b>FILL THE FORM TO CONTACT US</b>
+    </div>
+
+
+    <div class="container">
+    <form action="/action_page.php">
+        <label for="fname">NAME </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your Name">
+
+        <label for="lname">EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="Your Email">
+
+
+        <label for="subject">COMMENTS</label>
+        <textarea id="subject" name="subject" placeholder="Comments" style="height:200px"></textarea>
+
+        <button onclick="myFunction()">Submit</button>
+    </form>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>

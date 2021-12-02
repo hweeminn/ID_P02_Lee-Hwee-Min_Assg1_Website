@@ -44,3 +44,16 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+/* COMMENT BOX ________________________________________________________________________*/
+
+function myFunction() {
+  var txt;
+  if (confirm("You Have Just Send A Comment!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}

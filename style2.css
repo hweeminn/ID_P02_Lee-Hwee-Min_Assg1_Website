@@ -3,6 +3,63 @@ body{
     min-height: 200vh;
   
   }
+/* HEADER 2 ___________________________________ */
+    .indexheader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 30px 100px;
+        z-index: 100000;
+  }
+  
+  .indexheader.sticky{
+    padding: 5px 100px; 
+    background: white;
+  }
+  
+  .indexheader .indexlogo{
+    position: relative;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6;
+  
+  }
+  
+  
+  .indexheader ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .indexheader ul li{
+    position: relative;
+    list-style: none;
+  
+  }
+  
+  .indexheader ul li a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color:black
+  }
+
+  .indexheader ul li a:hover{
+    opacity: 0.7;
+  }
+
+
 /* HEADER SCROLL ______________________________ */
 header{
     position: fixed;
@@ -59,6 +116,10 @@ header{
   header.sticky ul li a
   {
     color:black;
+  }
+
+  header ul li a:hover{
+    opacity: 0.7;
   }
 
   /* EVENTS _________________________________________________________________________________________*/
@@ -150,28 +211,99 @@ p {
 }
 
 
-/*____________________________________________________________________________*/
-  /* About contact */
+/* CONTACTUS _________________________________________________________________________________________*/
+
+
+  /* word */
 .contact{
+    position: relative;
+    top:200px;
     font-size: 30px;
-    left: 50%;
     text-align: center;
-    color: white;
+    color: #647a85;
   }
-  .column {
+  
+  
+/* icons */
+
+
+.twitter {
+
+    position: relative;
+    top:234px;
+    left: 375px;
+
+} 
+
+.youtube {
+
     position: absolute;
-    display:inline-block;
-    text-align: center;
-    left:41%;
-    padding:20px;
-  
+    top:49%;
+    left: 42%;
   }
   
-  /* FOOTER __________________*/
-  footer {
+.instagram {
+
+    position: absolute;
+    top:47%;
+    left: 52%;
+}
+
+.tiktok {
+
+    position: absolute;
+    top:49%;
+    left: 63%;
+}
+  
+  /* COMMENT BOX __________________________*/
+
+  .contactus{
+    position: relative;
+    top: 350px;
+    text-align: center;
+    color: #647a85;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d7cf;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color:white ;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #647a85;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color:#a2b3ba;
+    padding: 30px;
+    margin-top: 370px;
+  }
+  
+
+
+/* FOOTER __________________*/
+footer {
+    position:relative;
     text-align: center;
     padding: 20px 100px;
     font-size: 10px;
+    bottom:0%;
     background-color:dimgray;
     color: white;
   }
