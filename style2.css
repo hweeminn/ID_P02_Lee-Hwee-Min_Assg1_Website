@@ -204,10 +204,10 @@ p {
 
 .timer
 {
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 240%;
-    left: 36%;
+    top: 45%;
+
 }
 
 
@@ -298,12 +298,12 @@ p {
 
 
 /* FOOTER __________________*/
-footer {
+#footer {
     position:relative;
     text-align: center;
     padding: 20px 100px;
     font-size: 10px;
-    bottom:0%;
+    bottom:0;
     background-color:dimgray;
     color: white;
   }

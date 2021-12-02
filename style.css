@@ -82,44 +82,207 @@ body{
     transform: translate(-50%, -50%);
   
     }
-  
-    /*image about */
+    
+    /*box achievement*/
 
-    .info{
+    .boxbg{
+      position: relative;
+      top: 100px;
+
+      background-color: #e3dfd6;
+      height:90vh;
+      width:100%;
+    }
+
+    .abtbts{
+      position: absolute;
+      color:#58534b;
+      font-size: 30px;
+      text-align: center;
+      top: 130%;
+      left:43%;
+    }
+
+    .box1{
+      position: absolute;
+      top: 150%;
+      left: 12%;
+
+      background-color:#dcd5cb ;
+      width: 200px;
+      height: 250px;
+    }
+
+    .trophy{
+      position: absolute;
+      top: 158%;
+      left: 18%;
+    }
+
+    .trophytext{
+      position: absolute;
+      top: 173%;
+      left: 210px;
+      color:#58534b;
+      font-size:20px;
+      font-family:'Nanum Myeongjo', sans-serif;
+    }
+
+    .box2{
+      position: absolute;
+      top: 150%;
+      left: 33%;
+
+      background-color:#dcd5cb ;
+      width: 200px;
+      height: 250px;
+    }
+
+    .albumsmade{
+      position: absolute;
+      top: 158%;
+      left: 39%;
+    }
+
+    .albumstext{
+      position: absolute;
+      top: 173%;
+      left: 465px;
+      color:#58534b;
+      font-size:20px;
+      font-family:'Nanum Myeongjo', sans-serif;
+    }
+
+    .box3{
+      position: absolute;
+      top: 150%;
+      left: 53%;
+
+      background-color:#dcd5cb ;
+      width: 200px;
+      height: 250px;
+    }
+
+    .debut{
+      position: absolute;
+      top: 157%;
+      left: 59%;
+    }
+
+    .debuttext{
+      position: absolute;
+      top: 173%;
+      left: 713px;
+      color:#58534b;
+      font-size:20px;
+      font-family:'Nanum Myeongjo', sans-serif;
+      text-align: center;
+    }
+
+    .box4{
+      position: absolute;
+      top: 150%;
+      left: 74%;
+
+      background-color:#dcd5cb ;
+      width: 200px;
+      height: 250px;
+    }
+
+    .donate{
+      position: absolute;
+      top: 158%;
+      left: 79%;
+    }
+
+    .donatetext{
+      position: absolute;
+      top: 173%;
+      left: 973px;
+      color:#58534b;
+      font-size:20px;
+      font-family:'Nanum Myeongjo', sans-serif;
+      text-align: center;
+    }
+
+    /*about more*/
+    .aboutmorebox{
+      position: absolute;
+      top:225%;
+      left:7%;
+      background-color: #d5cbc1;
+
+      width: 1100px;
+      height: 400px;
+    }
+
+    .bighit{
+      position:absolute;
+      top:232%;
+      left: 10%;
+    }
+
+    .bighittext{
+      position: absolute;
+      top:237%;
+      left: 66%;
+
+      font-size: 20px;
+
+    }
+
+    .aboutmorebox2{
+      position: absolute;
+      top:315%;
+      left:20%;
+      background-color: #d5cbc1;
+
+      width: 970px;
+      height: 330px;
+    }
+
+    .firstwin{
+      position:absolute;
+      top:322%;
+      left: 53%;
+    }
+
+    .firstwintext{
+      position: absolute;
+      top:326%;
+      left: 24%;
+
+      font-size: 20px;
+
+    }
+
+    /* quote font */
+    .quote {
+      position: absolute;
+      top: 375%;
+      left: 0;
+      bottom: 0;
+      width: 73%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: bold;
-      width: 100%;
-      height: 100vh;
-    }
-
-    h2{
-      font-size: 25px;
       text-align: center;
-
-    }
-    .info:nth-child(1){
-      background:#dcd5cb;     
     }
 
-    .info:nth-child(2){
-      background-image: url(https://file.mk.co.kr/meet/neds/2020/09/image_readtop_2020_909854_15991177864341881.jpg);
-      background-size: cover;
-      opacity: 0.8;
-    }
-    .info:nth-child(3){
-      background:#dcd5cb;
-    }
-
-    .info:nth-child(4){
-      background-image: url(https://cutewallpaper.org/21/bts-hd-pics/FOR-BTS-VJIN-dY-desktop-HD-wallpaper-edited-by-me.jpg);
-      background-size: cover;
-      opacity: 0.8;
-    }
-
-    .info:nth-child(5){
-      background:#dcd5cb;
+    
+    h1 {
+      color: mix(#fff, #e91e63, 85%);
+      font-size: 20px ;  
+      font-weight: 700;
+      text-shadow: 
+        -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%),
+        0.005em 0.005em 0 mix(#fff, #e91e63, 60%),
+        0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 
+        0.015em 0.015em mix(#fff, #e91e63, 64%), 
+        0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 
+        0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+        0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+        0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
     }
 
 
@@ -546,6 +709,7 @@ h1 span:nth-child(6){ animation-delay:.25s; }
   text-align: center;
   padding: 20px 100px;
   font-size: 10px;
+  top:60%;
   bottom:0;
   background-color:dimgray;
   color: white;

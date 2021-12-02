@@ -4,16 +4,6 @@ window.addEventListener("scroll",function(){
   header.classList.toggle("sticky",window.scrollY > 0);
 })
 
-/* Index Page ____________________________________________________________________________________ */
-
-
-/* Index parallex effect */
-const parallex = document.getElementById("aboutimg");
-
-window.addEventListener("scroll",function(){
-  let offset = window.pageY0ffset;
-  parallex.style.backgroundPositionY = offset* 0.2 + "px";
-})
 
 /* Event Page ____________________________________________________________________________________ */
 // Set the date we're counting down to
